@@ -13,7 +13,7 @@ async function bootstrap() {
       }
     },
   );
-  const logger = new Logger('MICRO TCP');
+  const logger = new Logger('MICRO REDIS');
 
   await app.listen(() => {
     logger.log('Ejecutando en el puerto 3002')
