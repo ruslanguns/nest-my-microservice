@@ -6,7 +6,7 @@ In this repository I have a monorepo generated the with Nest CLI, the idea is to
 
 ## Transports supported
 - [x] TCP
-- [ ] Redis
+- [x] Redis
 - [ ] MQTT
 - [ ] NATS
 - [ ] RabbitMQ
