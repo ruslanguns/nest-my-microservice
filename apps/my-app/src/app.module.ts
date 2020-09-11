@@ -13,6 +13,13 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         options: {
           port: 3001
         }
+      },
+      {
+        name: 'MATH_SERVICE_REDIS',
+        transport: Transport.REDIS,
+        options: {
+          port: 3002
+        }
       }
     ])
   ],

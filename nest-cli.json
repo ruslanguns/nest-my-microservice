@@ -25,6 +25,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/micro-tcp/tsconfig.app.json"
       }
+    },
+    "micro-redis": {
+      "type": "application",
+      "root": "apps/micro-redis",
+      "entryFile": "main",
+      "sourceRoot": "apps/micro-redis/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/micro-redis/tsconfig.app.json"
+      }
     }
   }
 }
