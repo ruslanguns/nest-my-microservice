@@ -3,7 +3,8 @@ import { AppService } from './app.service';
 import { MathService } from './math.service';
 
 @Controller()
-export class AppController {
+export class AppController{
+
   constructor(
     private readonly appService: AppService,
     private readonly mathService: MathService

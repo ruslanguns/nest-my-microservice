@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
+import { ClientsModule, Transport } from '@nestjs/microservices';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MathService } from './math.service';
-import { ClientsModule, Transport } from '@nestjs/microservices';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -18,9 +19,17 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         name: 'MATH_SERVICE_REDIS',
         transport: Transport.REDIS,
         options: {
-          port: 3002
+          url: 'redis://localhost:6379'
         }
-      }
+      },
+      {
+        name: 'MATH_SERVICE_GRPC',
+        transport: Transport.GRPC,
+        options: {
+          package: 'app',
+          protoPath: join(__dirname, '../../../apps/my-app/src/app.proto')
+        }
+      },
     ])
   ],
   controllers: [AppController],

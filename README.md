@@ -7,11 +7,11 @@ In this repository I have a monorepo generated the with Nest CLI, the idea is to
 ## Transports supported
 - [x] TCP
 - [x] Redis
+- [x] gRPC
 - [ ] MQTT
 - [ ] NATS
 - [ ] RabbitMQ
 - [ ] Kafka
-- [ ] gRPC
 
 ## Installation
 
